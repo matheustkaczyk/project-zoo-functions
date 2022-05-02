@@ -67,7 +67,6 @@ function addEmployee(id, firstName, lastName, managers = [], responsibleFor = []
   return newEmployee;
 }
 
-// Exercício feito com a ajuda do meu amigo Caio Morato
 function countAnimals(specie) {
   const contagem = species.find((animal) => animal.name === specie);
   if (specie) {
@@ -87,10 +86,6 @@ function calculateEntry(entrants) {
   return Adult * data.prices.Adult + Child * data.prices.Child + Senior * data.prices.Senior;
 }
 // console.log(calculateEntry({ 'Adult': 2, 'Child': 3, 'Senior': 1 }))
-
-// function getAnimalMap(options) {
-//   // seu código aqui
-// }
 
 function getSchedule(dayName) {
   const newSchedule = {};
@@ -114,7 +109,6 @@ function getSchedule(dayName) {
 }
 // console.log(getSchedule('Thursday'));
 
-// Requisito concluido com auxílio do repositório do colega Rodrigo Facury, precisei de ajuda para desenvolver a lógica
 function getOldestFromFirstSpecies(funcId) {
   const checkFunId = employees.find((person) => funcId === person.id);
   const getFirstSpecie = checkFunId.responsibleFor.find((especie) => especie);
@@ -137,25 +131,12 @@ function increasePrices(percentage) {
 }
 // console.log(increasePrices(30))
 
-// function getEmployeeCoverage(idOrName) {
-//   const obj = {};
-//   if (idOrName) {
-//     const checkCredentials = employees.find((employee) =>
-//     employee.id === idOrName || employee.firstName === idOrName || employee.lastName === idOrName);
-//   }
-//   employees.forEach((employee) => obj[`${employee.firstName} ${employee.lastName}`]);
-// }
-
-// console.log(getEmployeeCoverage('4b40a139-d4dc-4f09-822d-ec25e819a5ad'))
-
 module.exports = {
   calculateEntry,
   getSchedule,
   countAnimals,
-  // getAnimalMap,
   getSpeciesByIds,
   getEmployeeByName,
-  // getEmployeeCoverage,
   addEmployee,
   isManager,
   getAnimalsOlderThan,
