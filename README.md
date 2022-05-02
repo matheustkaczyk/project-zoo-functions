@@ -1,4 +1,4 @@
-Projeto desenvolvido no curso de desenvolvimento de software da Trybe. O objetivo desse projeto foi práticar lógica, botando em prática todo o conhecimento em ES6.
+Projeto desenvolvido no curso de desenvolvimento de software da Trybe. O objetivo desse projeto foi práticar lógica, botando em prática todo o conhecimento em JS, principalmente ES6.
 
 Data do projeto: 09/06/2021
 
